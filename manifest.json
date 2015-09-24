@@ -1,0 +1,13 @@
+{
+	"manifest_version": 2,
+
+	"name": "addPost",
+	"description": "This extension give you power to add post @ hitime.xyz",
+	"version": "0.0.1",
+
+	"browser_action": {
+		"default_icon": "icon.png",
+		"default_title": "Let's add something interesting!",
+		"default_popup": "popup.html"
+	}
+}
