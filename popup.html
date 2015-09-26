@@ -18,17 +18,19 @@
                     </div>
                     <label for="content">内容:</label>
                     <div class="input-control textarea full-size" data-role="input">
-                        <textarea id="text-area"></textarea>
+                        <textarea id="content"></textarea>
                     </div>
                 </div>
                 <br>
 
                 <div class="form-actions">
-                    <button type="submit" class="button primary" style="background: #ce352c; border-color: #ce352c">发表</button>
-                    <button type="button" class="button" style="margin-left: 15px">取消</button>
+                    <button type="submit" class="button primary" style="background: #ce352c; border-color: #ce352c" id="submit">发表</button>
+                    <button type="button" class="button" style="margin-left: 15px" id="cancel">取消</button>
                 </div>
             </form>
         </div>
+        <script type="text/javascript" src="jquery-2.1.4.js"></script>
+        <script type="text/javascript" src="csrf_protect.js"></script>
         <script type="text/javascript" src="popup.js"></script>
     </body>
 </html>
