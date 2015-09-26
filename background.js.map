@@ -1,9 +1,9 @@
 {
   "version": 3,
   "file": "background.js",
-  "sourceRoot": "",
+  "sourceRoot": "..",
   "sources": [
-    "background.coffee"
+    "extension/background.coffee"
   ],
   "names": [],
   "mappings": ""
