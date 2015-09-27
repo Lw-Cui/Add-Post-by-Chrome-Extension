@@ -1,9 +1,12 @@
-$('#submit').click ->
-	$.ajax
-		type: 'GET'
-		url: 'http://hitime.xyz/api'
-		data:
-			title: $('#title').val()
-			content: $('#content').val()
-		success: (data) ->
-			alert data
+$ ->
+	article = JSON.stringify
+		title: $('#title').val()
+		content: $('#content').val()
+	$('#submit').click ->
+		$.ajax
+			type: 'POST'
+			url: 'http://localhost:8000/api'
+			dataType: 'json'
+			data: article
+			error: ->
+			success: ->
