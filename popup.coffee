@@ -1,12 +1,7 @@
 $ ->
-	article = JSON.stringify
-		title: $('#title').val()
-		content: $('#content').val()
 	$('#submit').click ->
-		$.ajax
-			type: 'POST'
-			url: 'http://localhost:8000/api'
-			dataType: 'json'
-			data: article
-			error: ->
-			success: ->
+		http = new XMLHttpRequest()
+		url = 'http://localhost:8000/api'
+		params = "title=#{do $('#title').val}&content=#{do $('#content').val}"
+		http.open "POST", url, true
+		http.send params
